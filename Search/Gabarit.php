@@ -1,3 +1,4 @@
+<?php
 namespace IO\Api\Search\Engines;
 
 class Dvpio {
@@ -45,3 +46,4 @@ class Dvpio {
     return $this->maxItems;
   }
 }
+?>
