@@ -4,7 +4,6 @@ namespace IO\Api\Search\Engines;
 class Dvpio {
   
   protected $online   = true;                 // Moteur disponible dans la liste ?
-  protected $maxItems = 5;                    // Nombre maximum d'items retournés, si query en retourne plus ils seront ignorés
   protected $uri      = 'dvp.io';             // Site sur lequel on effectue une recherche (pour l'affichage)
   protected $api      = 'http://api.dvp.io';  // API du site sur lequel on effectue la recherche
   
@@ -39,11 +38,6 @@ class Dvpio {
   /* Méthode déterminant l'état du moteur */
   public function isOnline() {
     return $this->online;
-  }
-  
-  /* Méthode retournant le nombre maximum d'items à afficher */
-  public function maxItems() {
-    return $this->maxItems;
   }
 }
 ?>
